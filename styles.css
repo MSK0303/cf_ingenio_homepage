@@ -303,6 +303,40 @@ p {
   letter-spacing: 0.02em;
 }
 
+.news-item p {
+  margin: 0;
+}
+
+.news-item a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-item a:hover,
+.news-item a:focus-visible {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.news-archive {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(249, 250, 255, 0.85);
+  padding: 12px 14px;
+}
+
+.news-archive summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.news-archive[open] summary {
+  margin-bottom: 10px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

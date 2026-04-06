@@ -7,6 +7,8 @@ GitHub Pages向けの静的サイトです。
 - `index.html` : ページ本体
 - `styles.css` : デザイン
 - `script.js` : メニュー制御とスクロールアニメーション
+- `news.js` : お知らせデータ（ローカル直開きでも表示可）
+- `news.json` : 予備データ（未使用でも可）
 - `img/cf_ingenio_logo.jpg` : チームロゴ
 
 ## ローカル確認
@@ -36,6 +38,28 @@ GitHub Pagesはサーバーサイド処理ができないため、外部フォ�
 ```
 
 `your-form-id` を実際のIDに置き換えてください。
+
+## お知らせ更新方法
+
+お知らせは `index.html` ではなく `news.js` で管理します。
+
+- 新しいお知らせを `news.js` の `window.CF_INGENIO_NEWS` 配列に追加
+- `date` は `YYYY-MM-DD` 形式
+- 表示は日付の新しい順で自動ソート
+- トップには最新5件のみ表示
+- 6件目以降は「過去のお知らせ（アーカイブ）」に自動で入ります
+
+例:
+
+```javascript
+{
+	date: '2026-05-01',
+	title: '5月の体験会情報を公開しました。',
+	url: 'https://www.instagram.com/cfingenio/'
+}
+```
+
+`url` は任意です。設定するとタイトルがリンクになります。
 
 ## おすすめフォームサービス
 

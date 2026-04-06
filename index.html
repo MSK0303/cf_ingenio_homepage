@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="CF Ingenio Juniorの公式ホームページ。選手ファーストを掲げ、フットボールとフットサルで幼稚園から小学6年生までを育成するクラブ。" />
+  <link rel="icon" type="image/jpeg" href="img/cf_ingenio_logo.jpg" />
+  <link rel="apple-touch-icon" href="img/cf_ingenio_logo.jpg" />
   <title>CF Ingenio Junior | フットボール & フットサル</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -134,15 +136,13 @@
       <div class="container">
         <p class="eyebrow reveal">NEWS</p>
         <h2 class="reveal">お知らせ</h2>
-        <div class="news-list">
-          <article class="news-item reveal">
-            <time datetime="2026-04-06">2026.04.06</time>
-            <p>公式サイトを公開しました。</p>
-          </article>
-          <article class="news-item reveal delay-1">
-            <time datetime="2026-04-20">2026.04.20</time>
-            <p>体験会の案内はInstagramでお知らせします。</p>
-          </article>
+        <div id="news-latest" class="news-list" aria-live="polite"></div>
+        <details class="news-archive reveal">
+          <summary>過去のお知らせ（アーカイブ）</summary>
+          <div id="news-archive" class="news-list"></div>
+        </details>
+        <div id="news-error" class="small" hidden>
+          お知らせの読み込みに失敗しました。時間をおいて再度ご確認ください。
         </div>
       </div>
     </section>
@@ -200,6 +200,7 @@
     </div>
   </footer>
 
+  <script src="news.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
