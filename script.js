@@ -3,7 +3,6 @@ const globalNav = document.querySelector('.global-nav');
 const yearNode = document.querySelector('#currentYear');
 const latestNewsNode = document.querySelector('#news-latest');
 const archiveNewsNode = document.querySelector('#news-archive');
-const newsErrorNode = document.querySelector('#news-error');
 const NEWS_VISIBLE_COUNT = 5;
 
 if (yearNode) {
@@ -96,9 +95,7 @@ async function renderNews() {
     const data = await response.json();
     applyNewsToDom(normalizeNewsItems(data.news));
   } catch (error) {
-    if (newsErrorNode) {
-      newsErrorNode.hidden = false;
-    }
+    latestNewsNode.textContent = '';
   }
 }
 
