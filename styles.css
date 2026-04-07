@@ -213,6 +213,14 @@ p {
   line-height: 1.45;
 }
 
+.hero-values {
+  margin: 0 0 12px;
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffd4d4;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
