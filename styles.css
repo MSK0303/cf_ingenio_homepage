@@ -401,6 +401,37 @@ p {
   margin-bottom: 10px;
 }
 
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+  gap: 16px;
+}
+
+.sponsor-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sponsor-item:hover,
+.sponsor-item:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(214, 40, 40, 0.9);
+}
+
+.sponsor-item img {
+  width: 100%;
+  max-height: 86px;
+  object-fit: contain;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
