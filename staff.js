@@ -3,9 +3,9 @@ window.CF_INGENIO_STAFF = [
     name: '吉原和也',
     role: 'Entrenador (ヘッドコーチ)',
     career: [
-      'FCフェルサ武雄 (2009/8 ~ 2025/3)',
-      'わかばFC (2025/4 ~ 2026/3)',
-      'A.C. プリメーラ (2025/4 ~ 2026/3)'
+      'FCフェルサ武雄',
+      'わかばFC',
+      'A.C. プリメーラ'
     ],
     licenses: [
       'JFA サッカーC級ライセンス',
@@ -18,10 +18,16 @@ window.CF_INGENIO_STAFF = [
     name: '土井崇徳',
     role: 'Entrenador y Asesor (コーチ兼アドバイザー)',
     career: [
-      'A.C. プリメーラ (2022/3 ~ 2026/3)'
+      'C.A Fukuocana',
+      'アレシオ FC',
+      'A.C プリメーラ',
+      '海外帯同スタッフ',
+      'サニックス杯帯同スタッフ等',
     ],
     licenses: [
-      'JFA サッカーD級ライセンス'
+    'バルシューレ',
+      'JFA サッカーD級ライセンス',
+      'キッズリーダー',
     ]
   }
 ];

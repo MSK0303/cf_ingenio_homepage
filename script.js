@@ -106,7 +106,7 @@ function createStaffCard(staff) {
 
   const careerTitle = document.createElement('p');
   careerTitle.className = 'staff-label';
-  careerTitle.textContent = '経歴 / Trayectoria';
+  careerTitle.textContent = '指導歴 / Experiencia como entrenador';
 
   const careerList = document.createElement('ul');
   careerList.className = 'staff-list';
