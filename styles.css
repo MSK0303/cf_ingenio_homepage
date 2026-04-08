@@ -346,6 +346,27 @@ p {
   padding: 18px;
 }
 
+.enrollment-callout {
+  margin-top: 22px;
+  background: linear-gradient(120deg, rgba(193, 18, 31, 0.18), rgba(34, 34, 38, 0.95));
+  border: 1px solid rgba(214, 40, 40, 0.6);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.enrollment-callout h3 {
+  margin: 0 0 6px;
+}
+
+.enrollment-callout .small {
+  margin: 0;
+}
+
 .news-list {
   display: grid;
   gap: 10px;
@@ -635,6 +656,11 @@ textarea:focus {
   .cards-5,
   .schedule-grid {
     grid-template-columns: 1fr;
+  }
+
+  .enrollment-callout {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-inner {
