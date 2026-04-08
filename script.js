@@ -3,6 +3,7 @@ const globalNav = document.querySelector('.global-nav');
 const yearNode = document.querySelector('#currentYear');
 const latestNewsNode = document.querySelector('#news-latest');
 const archiveNewsNode = document.querySelector('#news-archive');
+const staffListNode = document.querySelector('#staff-list');
 const NEWS_VISIBLE_COUNT = 5;
 
 if (yearNode) {
@@ -76,6 +77,83 @@ function applyNewsToDom(newsItems) {
   }
 }
 
+function createStaffCard(staff) {
+  const article = document.createElement('article');
+  article.className = 'staff-card';
+
+  const media = document.createElement('div');
+  media.className = 'staff-media';
+
+  if (staff.image) {
+    const image = document.createElement('img');
+    image.src = staff.image;
+    image.alt = `${staff.name} の写真`;
+    media.appendChild(image);
+  } else {
+    const fallback = document.createElement('div');
+    fallback.className = 'staff-photo-fallback';
+    fallback.textContent = 'PHOTO SOON';
+    media.appendChild(fallback);
+  }
+
+  const name = document.createElement('h3');
+  name.className = 'staff-name';
+  name.textContent = staff.name;
+
+  const role = document.createElement('p');
+  role.className = 'staff-role';
+  role.textContent = staff.role;
+
+  const careerTitle = document.createElement('p');
+  careerTitle.className = 'staff-label';
+  careerTitle.textContent = '経歴 / Trayectoria';
+
+  const careerList = document.createElement('ul');
+  careerList.className = 'staff-list';
+  (staff.career || []).forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    careerList.appendChild(li);
+  });
+
+  const licenseTitle = document.createElement('p');
+  licenseTitle.className = 'staff-label';
+  licenseTitle.textContent = '資格 / Licencias';
+
+  const licenseList = document.createElement('ul');
+  licenseList.className = 'staff-list';
+  (staff.licenses || []).forEach((item) => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    licenseList.appendChild(li);
+  });
+
+  article.append(
+    media,
+    name,
+    role,
+    careerTitle,
+    careerList,
+    licenseTitle,
+    licenseList
+  );
+
+  return article;
+}
+
+function renderStaff() {
+  if (!staffListNode) {
+    return;
+  }
+
+  const staffData = Array.isArray(window.CF_INGENIO_STAFF)
+    ? window.CF_INGENIO_STAFF
+    : [];
+
+  staffListNode.textContent = '';
+  staffData.forEach((staff) => staffListNode.appendChild(createStaffCard(staff)));
+}
+
 async function renderNews() {
   if (!latestNewsNode || !archiveNewsNode) {
     return;
@@ -100,6 +178,7 @@ async function renderNews() {
 }
 
 renderNews();
+renderStaff();
 
 const revealTargets = document.querySelectorAll('.reveal');
 

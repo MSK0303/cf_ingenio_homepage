@@ -432,6 +432,72 @@ p {
   object-fit: contain;
 }
 
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.staff-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.staff-media {
+  margin-bottom: 12px;
+}
+
+.staff-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.staff-photo-fallback {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  border: 1px dashed rgba(255, 255, 255, 0.28);
+  background: linear-gradient(160deg, #2a2a30, #1b1b1f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #cfcfd2;
+}
+
+.staff-name {
+  margin: 0 0 2px;
+}
+
+.staff-role {
+  margin: 0 0 12px;
+  color: #ffb3b3;
+  font-weight: 700;
+}
+
+.staff-label {
+  margin: 12px 0 6px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.staff-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.staff-list li {
+  margin-bottom: 6px;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
