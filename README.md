@@ -70,7 +70,7 @@ GitHub Pagesはサーバーサイド処理ができないため、外部フォ�
 
 ## 変更したい情報
 
-- 対象学年（幼稚園年中〜小学6年生）
+- 対象学年（小学1年生〜小学6年生）
 - 練習曜日・時間・会場
 - 料金プラン
 - SNSリンク（Instagram: https://www.instagram.com/cfingenio/）

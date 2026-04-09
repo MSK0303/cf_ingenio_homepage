@@ -531,6 +531,38 @@ p {
   padding-left: 18px;
 }
 
+.instagram-qr-box {
+  margin-top: 18px;
+  max-width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.instagram-qr-box .eyebrow {
+  margin-bottom: 8px;
+}
+
+.instagram-qr-image {
+  width: 100%;
+  max-width: 210px;
+  border-radius: 8px;
+  border: 1px solid #505059;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.instagram-qr-box a:hover .instagram-qr-image,
+.instagram-qr-box a:focus-visible .instagram-qr-image {
+  transform: translateY(-2px);
+  border-color: rgba(214, 40, 40, 0.9);
+}
+
+.instagram-qr-box .small {
+  margin: 10px 0 0;
+}
+
 .contact-form {
   background: var(--bg-card);
   border: 1px solid var(--line);
