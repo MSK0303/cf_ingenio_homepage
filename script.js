@@ -4,6 +4,7 @@ const yearNode = document.querySelector('#currentYear');
 const latestNewsNode = document.querySelector('#news-latest');
 const archiveNewsNode = document.querySelector('#news-archive');
 const staffListNode = document.querySelector('#staff-list');
+const contactFormNode = document.querySelector('.contact-form');
 const NEWS_VISIBLE_COUNT = 5;
 
 if (yearNode) {
@@ -154,6 +155,46 @@ function renderStaff() {
   staffData.forEach((staff) => staffListNode.appendChild(createStaffCard(staff)));
 }
 
+function setupContactForm() {
+  if (!contactFormNode) {
+    return;
+  }
+
+  contactFormNode.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const submitButton = contactFormNode.querySelector('button[type="submit"]');
+    const originalLabel = submitButton ? submitButton.textContent : '';
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = '送信中...';
+    }
+
+    try {
+      const response = await fetch(contactFormNode.action, {
+        method: 'POST',
+        body: new FormData(contactFormNode),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('failed to submit form');
+      }
+
+      window.location.href = 'thankyou.html';
+    } catch (error) {
+      window.alert('送信に失敗しました。時間をおいて再度お試しください。');
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalLabel;
+      }
+    }
+  });
+}
+
 async function renderNews() {
   if (!latestNewsNode || !archiveNewsNode) {
     return;
@@ -179,6 +220,7 @@ async function renderNews() {
 
 renderNews();
 renderStaff();
+setupContactForm();
 
 const revealTargets = document.querySelectorAll('.reveal');
 

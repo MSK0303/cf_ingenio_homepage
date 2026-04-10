@@ -646,6 +646,26 @@ textarea:focus {
   transform: translateY(0);
 }
 
+.thanks-main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.thanks-card {
+  width: min(640px, 92vw);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.thanks-card h1 {
+  white-space: normal;
+}
+
 @media (max-width: 960px) {
   .hero-grid,
   .contact-grid {
