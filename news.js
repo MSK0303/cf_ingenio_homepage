@@ -1,32 +1,36 @@
 window.CF_INGENIO_NEWS = [
   {
-    date: '2026-04-20',
-    title: '体験会の案内はInstagramでお知らせします。',
-    url: 'https://www.instagram.com/cfingenio/'
-  },
-  {
-    date: '2026-04-06',
+    date: '2026-04-11',
     title: '公式サイトを公開しました。'
   },
   {
-    date: '2026-03-28',
+    date: '2026-04-11',
+    title: '「神興小学校」と「古賀西小学校」を練習場所として使用させていただくことになりました。'
+  },
+  {
+    date: '2026-04-09',
     title: '2026年度の活動準備を開始しました。'
   },
   {
-    date: '2026-03-15',
-    title: 'クラブコンセプト「選手ファースト」を公開しました。'
+    date: '2026-04-06',
+    title: '「博多もつ鍋 炉端焼き 坂」様とスポンサー契約を締結しました。',
+    url: 'https://www.instagram.com/saka_hakata/'
   },
   {
-    date: '2026-03-01',
+    date: '2026-04-05',
     title: 'Instagram公式アカウントの運用を開始しました。',
     url: 'https://www.instagram.com/cfingenio/'
   },
   {
-    date: '2026-02-20',
-    title: '育成方針の初版を公開しました。'
+    date: '2026-04-05',
+    title: 'チームロゴを公開しました。',
   },
   {
-    date: '2026-02-10',
-    title: 'クラブロゴを決定しました。'
+    date: '2026-04-05',
+    title: 'チーム名を「CF Ingenio Junior」に決定しました。'
+  },
+  {
+    date: '2026-04-03',
+    title: 'チーム方針を固め、ジュニアサッカークラブとしての活動を開始することを決定しました。'
   }
 ];
