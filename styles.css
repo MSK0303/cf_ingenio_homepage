@@ -367,6 +367,44 @@ p {
   margin: 0;
 }
 
+.map-links-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.map-link-card {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.map-link-card h3 {
+  margin: 0 0 6px;
+}
+
+.map-link-card .small {
+  margin: 0;
+}
+
+.map-link-card:hover,
+.map-link-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(214, 40, 40, 0.85);
+}
+
+.map-link-card.is-disabled {
+  opacity: 0.82;
+  cursor: default;
+}
+
 .news-list {
   display: grid;
   gap: 10px;
@@ -675,7 +713,8 @@ textarea:focus {
   .cards,
   .cards-4,
   .cards-5,
-  .schedule-grid {
+  .schedule-grid,
+  .map-links-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -706,7 +745,8 @@ textarea:focus {
   .cards,
   .cards-4,
   .cards-5,
-  .schedule-grid {
+  .schedule-grid,
+  .map-links-grid {
     grid-template-columns: 1fr;
   }
 
