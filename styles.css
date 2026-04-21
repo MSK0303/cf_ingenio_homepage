@@ -128,7 +128,7 @@ p {
   height: 46px;
   width: auto;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
   box-shadow: var(--shadow);
   border: 2px solid rgba(193, 18, 31, 0.4);
 }
@@ -456,7 +456,7 @@ p {
 /* ============ SCHEDULE ============ */
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -855,7 +855,6 @@ textarea:focus {
   .cards-3,
   .cards-4,
   .cards-5,
-  .schedule-grid,
   .map-links-grid {
     grid-template-columns: 1fr 1fr;
   }
