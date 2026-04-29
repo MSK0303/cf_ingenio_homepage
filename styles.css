@@ -125,12 +125,12 @@ p {
 }
 
 .brand-logo {
-  height: 46px;
-  width: auto;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
-  border: 2px solid rgba(193, 18, 31, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .brand-text {
