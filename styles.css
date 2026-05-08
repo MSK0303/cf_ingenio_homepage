@@ -467,6 +467,25 @@ p {
   padding: 20px;
 }
 
+.schedule-item-wide {
+  grid-column: 1 / -1;
+  border-color: rgba(193, 18, 31, 0.4);
+  background: linear-gradient(120deg, rgba(193, 18, 31, 0.1), #0e1c2f);
+}
+
+.badge-open {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: normal;
+  padding: 2px 10px;
+  border-radius: 99px;
+  background: rgba(193, 18, 31, 0.2);
+  border: 1px solid rgba(193, 18, 31, 0.5);
+  color: #f87070;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
 .cal-wrapper {
   margin-top: 32px;
 }
