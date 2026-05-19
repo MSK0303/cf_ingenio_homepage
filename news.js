@@ -1,5 +1,18 @@
 window.CF_INGENIO_NEWS = [
   {
+    date: '2026-05-19',
+    title: '練習場所を神興小学校から勝浦小学校に変更しました。'
+  },
+  {
+    date: '2026-05-14',
+    title: '「うみがめ整骨院」様とスポンサー契約を締結しました。',
+    url: 'https://www.instagram.com/umigame_seikotsuin/'
+  },
+  {
+    date: '2026-05-08',
+    title: 'スクール生募集を開始しました。'
+  },
+  {
     date: '2026-04-11',
     title: '公式サイトを公開しました。'
   },
