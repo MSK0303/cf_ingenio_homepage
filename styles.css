@@ -631,16 +631,39 @@ p {
 }
 
 /* ============ SPONSORS ============ */
-.sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
+.sponsor-tier {
+  margin-bottom: 28px;
+}
+
+.sponsor-tier:last-child {
+  margin-bottom: 0;
+}
+
+.sponsor-tier-label {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sponsor-row {
+  display: flex;
   gap: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
 }
 
 .sponsor-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  width: 200px;
   min-height: 120px;
   background: var(--bg-card);
   border: 1px solid var(--line);

@@ -2,6 +2,7 @@ window.CF_INGENIO_STAFF = [
   {
     name: '吉原和也',
     role: 'Entrenador (ヘッドコーチ)',
+    image: 'img/yoshihara_image.png',
     career: [
       'FCフェルサ武雄',
       'わかばFC',
@@ -18,6 +19,7 @@ window.CF_INGENIO_STAFF = [
   {
     name: '土井崇徳',
     role: 'Entrenador y Asesor (コーチ兼アドバイザー)',
+    image: 'img/doi_image.png',
     career: [
       'C.A Fukuocana',
       'アレシオ FC',
